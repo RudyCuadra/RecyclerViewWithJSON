@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/tvPhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tvPhoto"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/tvPhoto"
+        android:text="Nombre del anime"/>
+
+    <TextView
+        android:id="@+id/tvContentId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tvId"
+        android:textStyle="italic"
+        android:layout_toStartOf="@+id/tvId"
+        android:text="ID:"/>
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:layout_alignParentEnd="true"
+        android:text="ID"/>
+
+    <TextView
+        android:id="@+id/tvInstruccs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNombre"
+        android:layout_toEndOf="@+id/tvPhoto"
+        android:layout_toRightOf="@+id/tvPhoto"
+        android:text="INSTRUCCIONES"/>
+
+    <TextView
+        android:id="@+id/tvCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvInstruccs"
+        android:layout_toEndOf="@+id/tvPhoto"
+        android:layout_toRightOf="@+id/tvPhoto"
+        android:layout_marginTop="5dp"
+        android:text="Category: "/>
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvCategory"
+        android:layout_toEndOf="@+id/tvPhoto"
+        android:layout_toRightOf="@+id/tvPhoto"
+        android:layout_marginTop="5dp"
+        android:text="Price: "/>
+
+
+
+</RelativeLayout>
